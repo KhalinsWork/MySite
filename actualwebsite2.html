@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title></title>
+	<style>
+		.imageContainer, .videoContainer {
+			display: none;
+			margin-top: 10px;
+		}
+		.toggleLink {
+			cursor: pointer;
+			color: white;
+			text-decoration: underline;
+		}
+		body {
+			text-align: center;
+			background-color: black;
+			color: white;
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+		img, video {
+			max-width: 100%;
+			height: auto;
+		}
+		@media (max-width: 600px) {
+			img, video {
+				width: 100%;
+				height: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+<center>
+<a href="index.html" style="color: white;">
+<h2>Click Here For Main Screen</h2>
+</a>
+<h1>The Name's <u>Khalin</u>, This Is My Marketing Brand!</h1>
+<h1>___________________</h1>
+<h1><U>Marketing Brand:</U></h1>
+<img src="FMLOGO.jpg" alt:"Feeling Monitor Logo" width="100" height="100">
+<h1>Feeling Monitor</h1>
+<h1>___________________</h1>
+<h3>Behind The Smile Clip 1:</h3>
+<a class="toggleLink" data-target="video1">"Behind The Smile" Ft. @dammiannn21 @sephin.1.1, @msjcedu, @cielamichin, @ovo.vince, @manny.hazim, @ryan_s.m.i.t.h, By @khalinaf/ @roarin.tv</a>
+<div id="video1" class="videoContainer">
+<video width="320: height="180" controls>
+<source src="FM1.mp4" type="video/mp4">
+Unsupported Video Type
+</video>
+</div>
+<h1>___________________</h1>
+<h3>Behind The Smile Clip 2:</h3>
+<a class="toggleLink" data-target="video2">"Behind The Smile2" Ft. @dammiannn21 @sephin.1.1, @msjcedu, @cielamichin, @ovo.vince, @manny.hazim, @ryan_s.m.i.t.h, By @khalinaf/ @roarin.tv</a>
+<div id="video2" class="videoContainer">
+<video width="320: height="180" controls>
+<source src="FM2.mp4" type="video/mp4">
+Unsupported Video Type
+</video>
+</div>
+<h1>___________________</h1>
+<h3>Behind The Smile Clip 3:</h3>
+<a class="toggleLink" data-target="video3">"Behind The Smile3" Ft. @dammiannn21 @sephin.1.1, @msjcedu, @cielamichin, @ovo.vince, @manny.hazim, @ryan_s.m.i.t.h, By @khalinaf/ @roarin.tv</a>
+<div id="video3" class="videoContainer">
+<video width="320: height="180" controls>
+<source src="FM4.mp4" type="video/mp4">
+Unsupported Video Type
+</video>
+</div>
+<h1>___________________</h1>
+<h3>Behind The Smile Clip 4:</h3>
+<a class="toggleLink" data-target="video4">"Behind The Smile4" Ft. @dammiannn21 @sephin.1.1, @msjcedu, @cielamichin, @ovo.vince, @manny.hazim, @ryan_s.m.i.t.h, By @khalinaf/ @roarin.tv</a>
+<div id="video4" class="videoContainer">
+<video width="320: height="180" controls>
+<source src="FM5.mp4" type="video/mp4">
+Unsupported Video Type
+</video>
+</div>
+<h1>___________________</h1>
+<h3>Behind The Smile Clip 5:</h3>
+<a class="toggleLink" data-target="video5">"Behind The Smile5" Ft. @dammiannn21 @sephin.1.1, @msjcedu, @cielamichin, @ovo.vince, @manny.hazim, @ryan_s.m.i.t.h, By @khalinaf/ @roarin.tv</a>
+<div id="video5" class="videoContainer">
+<video width="320: height="180" controls>
+<source src="FM6.mp4" type="video/mp4">
+Unsupported Video Type
+</video>
+</div>
+<h1>___________________</h1>
+
+
+<h1>For Inquiries, Email Me Here: khalinafouche@gmail.com</h1>
+</center>
+<script>
+	document.querySelectorAll('.toggleLink').forEach(link => {
+		link.addEventListener('click', function() {
+			const targetId = this.getAttribute('data-target');
+			const targetElement = document.getElementById(targetId);
+			targetElement.style.display = targetElement.style.display === 'none' ? 'block' : 'none';
+		});
+	});
+</script>
+</body>
+</html>
